@@ -1,0 +1,209 @@
+.about__wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    height: max-content;
+    position: relative;
+    display: flex;
+    background-color: #1f232e;
+    box-shadow: 0 2px black;
+    margin-bottom: 1px;
+}
+
+.about__wrapper .left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    /* padding-bottom: 250%; */
+}
+
+.about__wrapper .left img {
+    width: 400px;
+    height: 400px;
+}
+
+.about__wrapper #right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 14dvh 2.5%;
+}
+
+.about__wrapper header {
+    font-size: 20pt;
+    -webkit-text-stroke: 1pt rgb(255, 255, 255);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about__wrapper header::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    left: 0;
+    bottom: -20%;
+}
+
+.about__wrapper header span {
+    letter-spacing: 1.2pt;
+    color: white;
+}
+
+.about__wrapper header span:nth-child(1) {
+    color: aqua;
+    margin-right: 10px;
+    -webkit-text-stroke: 1pt aqua;
+}
+
+.about__wrapper p {
+    margin: 15px 0;
+    font-size: 13pt;
+    -webkit-text-stroke: .6pt aqua;
+    color: aqua;
+}
+
+.about__wrapper .content {
+    line-height: 30px;
+}
+
+.about__wrapper .content p {
+    color: white;
+    -webkit-text-stroke: .01pt white;
+    font-size: 11pt;
+}
+
+/*-----------------------------------------------------------PERSONAL DETAILS--------------------------------------------------------------*/
+.about__wrapper .pdetails h3 {
+    margin-bottom: 15px;
+    position: relative;
+    color: aqua;
+}
+
+.about__wrapper .pdetails h3::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    left: 0;
+    bottom: -20%;
+}
+
+.about__wrapper .pdetails div {
+    display: flex;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.about__wrapper .pdetails div span:nth-child(1) {
+    margin-right: 7px;
+}
+
+.about__wrapper .pdetails div span img {
+    width: 20px;
+    height: 20px;
+}
+
+/*--------------------------------------------------------END OF PERSONAL DETAILS-------------------------------------------------------*/
+.about__wrapper #right .anchor {
+    margin-top: 35px;
+}
+
+.about__wrapper #right a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: .4s all ease;
+}
+
+.about__wrapper #right a:hover,
+.about__wrapper #right a:focus {
+    padding: 13px 18px;
+}
+
+@media (max-width:820px){
+    .about__wrapper .left{
+        padding-left: 1%;
+        padding-bottom: 10%;
+    }
+    .about__wrapper .left img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width:778px) {
+    
+    .about__wrapper header {
+        font-size: 16pt;
+    }
+
+    .about__wrapper .content {
+        line-height: 20px;
+    }
+
+    .about__wrapper .content p {
+        font-size: 9pt;
+    }
+
+    .about__wrapper .pdetails div {
+        line-height: 15px;
+        font-size: 10pt;
+    }
+
+    .about__wrapper #right a {
+        padding: 10px 15px;
+    }
+
+    .about__wrapper #right a:hover,
+    .about__wrapper #right a:focus {
+        padding: 7px 12px;
+    }
+}
+
+@media (max-width:712px) {
+    .about__wrapper {
+        flex-direction: column;
+    }
+
+    .about__wrapper #right {
+        width: 90%;
+        padding: 2.5%;
+    }
+
+    .about__wrapper .content {
+        line-height: 20px;
+    }
+
+    .about__wrapper .content p {
+        font-size: 11pt;
+    }
+    .about__wrapper .pdetails div {
+        line-height: 15px;
+        font-size: 12pt;
+    }
+
+    .about__wrapper #right .anchor {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .about__wrapper .left{
+        width: 100%;
+        padding: 5% 0;
+    }
+    .about__wrapper .left img{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media(max-width:430px){
+    .about__wrapper .left img{
+        width: 85%;
+        height: 85%;
+    }
+}

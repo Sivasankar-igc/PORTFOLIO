@@ -1,0 +1,104 @@
+.education__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100dvh;
+    max-height: max-content;
+    justify-content: flex-start;
+    align-items:center;
+    background-color: #1f232e;
+    box-shadow: 0 2px black;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.education__wrapper header {
+    font-size: 20pt;
+    -webkit-text-stroke: 1pt white;
+    margin: 45px 0;
+}
+
+.education__wrapper header span {
+    letter-spacing: 1.2pt;
+}
+
+.education__wrapper header span:nth-child(1) {
+    color: aqua;
+    margin-right: 10px;
+    -webkit-text-stroke: 1pt aqua;
+}
+
+.education__wrapper #education__box{
+    width: 85%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.education__wrapper #education__box .card{
+    display: flex;
+    flex-direction: column;
+    padding:10px 5px;
+    width: 320px;
+    height: 280px;
+    max-height: fit-content;
+    align-items: center;
+    background-color: #313743;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.education__wrapper #education__box .card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.education__wrapper #education__box .card p{
+    margin-bottom: 10px;
+}
+.education__wrapper #education__box .card p:nth-child(2){
+    -webkit-text-stroke: .6pt aqua;
+    color: aqua;
+    letter-spacing: 1.2pt;
+}
+.education__wrapper #education__box .card p:nth-child(3){
+    -webkit-text-stroke: .4pt white;
+    color: white;
+}
+.education__wrapper #education__box .card p:nth-child(4){
+    color: aqua;
+}
+.education__wrapper #education__box .card div.more{
+    width: 80%;
+    text-align:center;
+    font-size: 10pt;
+    margin-top: 10px;
+    color: white;
+    line-height: 20px;
+}
+@media (min-width:800px) and (max-width:985px){
+    .education__wrapper #education__box{
+        width: 100%;
+    }
+    .education__wrapper #education__box .card p:nth-child(3){
+        font-size: 11pt;
+    }
+    .education__wrapper #education__box .card div.more{
+        line-height: 15px;
+    }
+}
+@media (max-width:800px){
+    .education__wrapper #education__box{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .education__wrapper #education__box .card{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:680px){
+    .education__wrapper #education__box .card{
+        width:300px;
+    }
+}

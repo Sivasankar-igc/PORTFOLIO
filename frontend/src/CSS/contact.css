@@ -1,0 +1,176 @@
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100dvh;
+    max-height: max-content;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1f232e;
+    position: relative;
+}
+
+.contact__wrapper header {
+    font-size: 20pt;
+    -webkit-text-stroke: 1pt white;
+    color: white;
+    margin: 45px;
+}
+
+.contact__wrapper header span {
+    letter-spacing: 1.2pt;
+}
+
+.contact__wrapper header span:nth-child(1) {
+    color: aqua;
+    margin-right: 10px;
+    -webkit-text-stroke: 1pt aqua;
+}
+
+.contact__wrapper div#contact__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact__wrapper #contact__box div {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.contact__wrapper #contact__box div input {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 10pt;
+    color: white;
+    -webkit-text-stroke: .6pt white;
+    background-color: #313743;
+    margin-bottom: 6px;
+    letter-spacing: 1.2pt;
+}
+
+.contact__wrapper #contact__box div:nth-child(2) input {
+    width: 620px;
+}
+
+.contact__wrapper #contact__box div:nth-child(3) textarea {
+    width: 620px;
+    height: 150px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: #313743;
+    color: white;
+    letter-spacing: 1.2pt;
+}
+
+.contact__wrapper #contact__box button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #00ffff91;
+    box-shadow: 0 0 15px aqua;
+    color: black;
+    font-size: 12pt;
+    -webkit-text-stroke: .4pt black;
+    margin: 5% 1% 0 2%;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+.contact__wrapper #contact__box button:hover {
+    transform: scale(.96);
+    box-shadow: 0 0 15px 5px aqua;
+}
+
+/*================================================================WAVY PATTERN DESIGN=======================================================*/
+.contact__wrapper #contact__box div {
+    position: relative;
+}
+
+.contact__wrapper #contact__box div label {
+    color: aqua;
+    position: absolute;
+    font-size: 9pt;
+    -webkit-text-stroke: .3pt aqua;
+    letter-spacing: 1.2pt;
+    bottom: 60%;
+}
+
+.contact__wrapper #contact__box div label:nth-child(2) {
+    left: 2.5%;
+}
+
+.contact__wrapper #contact__box div label:nth-child(4) {
+    left: 54%;
+}
+
+.contact__wrapper #contact__box div label span {
+    position: absolute;
+    color: aqua;
+    font-size: 10pt;
+    transition: .4s all ease;
+}
+
+.contact__wrapper #contact__box div label span.wavySpan,
+.contact__wrapper #contact__box div input:focus+label span,
+.contact__wrapper #contact__box div input:valid+label span {
+    transform: translateY(-200%);
+}
+
+/*================================================================END OF WAVY PATTERN DESIGN================================================*/
+
+@media (max-width:670px){
+    .contact__wrapper #contact__box {
+        width: 90%;
+    }
+    .contact__wrapper #contact__box div{
+        width: 100%;
+    }
+    .contact__wrapper #contact__box div input {
+        width: 46%;
+        height: 50px;
+    }
+    
+    .contact__wrapper #contact__box div:nth-child(2) input {
+        width: 95%;
+    }
+    
+    .contact__wrapper #contact__box div:nth-child(3) textarea {
+        width: 95%;
+    }
+}
+@media (max-width:475px){
+    .contact__wrapper #contact__box div:nth-child(1){
+        flex-direction: column;
+    }
+    .contact__wrapper #contact__box div:nth-child(1) input{
+        width: 95%;
+    }
+    .contact__wrapper #contact__box div:nth-child(1) label:nth-child(2) {
+        left: 2.5%;
+        bottom: 80%;
+    }
+    
+    .contact__wrapper #contact__box div label:nth-child(4) {
+        left: 2.5%;
+        bottom: 30%;
+    }
+}
+@media (max-width:393px){
+    .contact__wrapper #contact__box{
+        width: 85%;
+    }
+    .contact__wrapper #contact__box div{
+        width: 115%;
+    }
+}

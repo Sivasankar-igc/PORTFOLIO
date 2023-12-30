@@ -1,0 +1,173 @@
+.latestProject__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100dvh;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f232e;
+    box-shadow: 0 2px black;
+    margin-bottom: 2px;
+}
+
+.latestProject__wrapper header {
+    font-size: 20pt;
+    -webkit-text-stroke: 1pt white;
+    position: relative;
+    top: -15%;
+    color: white;
+}
+
+.latestProject__wrapper header span {
+    letter-spacing: 1.2pt;
+}
+
+.latestProject__wrapper header span:nth-child(1) {
+    color: aqua;
+    margin-right: 10px;
+    -webkit-text-stroke: 1pt aqua;
+}
+
+.latestProject__wrapper .lp__box {
+    padding: 20px;
+    height: 60%;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*=================================================LATEST PROJECT CARD DESIGN===============================================*/
+.latestProject__wrapper .lp__box .card header {
+    color: white;
+    top: -1%;
+    left: 2%;
+    -webkit-text-stroke: .1pt white;
+}
+
+.latestProject__wrapper .lp__box .card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 18px;
+    padding: 20px;
+    border-radius: 2.3%;
+    box-shadow: 10px 5px 20px black;
+    background-color: #313743;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin: 1% 0.4%;
+    transition: .7s all ease;
+}
+
+.latestProject__wrapper .lp__box .card header {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    padding: 5px 0;
+}
+
+.latestProject__wrapper .lp__box .card #image-cont {
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+    transition: .4s all ease;
+}
+
+.latestProject__wrapper .lp__box .card #image-cont:hover {
+    transform: scale(1.04);
+}
+
+.latestProject__wrapper .lp__box .card p {
+    position: absolute;
+    bottom: 10%;
+    left: 38%;
+    color: white;
+    font-family: monospace;
+    font-size: 13pt;
+    letter-spacing: 2.3px;
+    z-index: 10;
+    transition: .6s all ease;
+}
+
+.latestProject__wrapper .lp__box .card p:hover {
+    transform: scale(.85);
+    letter-spacing: .3px;
+    cursor: pointer;
+}
+
+.latestProject__wrapper .lp__box .card p:hover~div.content,
+.latestProject__wrapper .lp__box .card div.activeContent {
+    display: block;
+    opacity: 1;
+    top: 20%;
+}
+
+.latestProject__wrapper .lp__box .card .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(45, 39, 39, 0.37);
+    backdrop-filter: blur(15px);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-fill-color: white;
+    line-height: 180%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 100px;
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+    transition: .7s all ease;
+}
+
+@media (max-width:1230px) {
+    .latestProject__wrapper .lp__box .card {
+        width: 260px;
+        height: 280px;
+    }
+}
+
+@media (max-width:1083px) {
+    .latestProject__wrapper .lp__box .card {
+        width: 40%;
+        height: 300px;
+    }
+}
+
+@media (max-width:840px) {
+    .latestProject__wrapper .lp__box .card header{
+        font-size:10pt;
+    }
+}
+
+@media (max-width:621px) {
+    .latestProject__wrapper .lp__box .card{
+        height: 250px;
+    }
+    .latestProject__wrapper .lp__box .card .content {
+        font-size: 10pt;
+    }
+    .latestProject__wrapper .lp__box .card p{
+        bottom: 10%;
+    }
+    .latestProject__wrapper .lp__box .card {
+        width: 80%;
+        margin: 3% 10%;
+    }
+}
+
+@media (max-width:400px) {
+    .latestProject__wrapper .lp__box .card {
+        width: 90%;
+        margin: 3% 0;
+    }
+}
+
+/*=========================================================END OF LATEST PROJECT CARD DESIGN======================================================*/
