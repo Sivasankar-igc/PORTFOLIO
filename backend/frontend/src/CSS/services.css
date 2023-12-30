@@ -1,0 +1,110 @@
+.service__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100dvh;
+    max-height: max-content;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1f232e;
+    box-shadow: 0 2px black;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.service__wrapper header {
+    font-size: 20pt;
+    -webkit-text-stroke: 1pt rgb(255, 255, 255);
+    color: white;
+    margin: 45px;
+}
+
+.service__wrapper header span {
+    letter-spacing: 1.2pt;
+}
+
+.service__wrapper header span:nth-child(1) {
+    color: aqua;
+    margin-right: 10px;
+    -webkit-text-stroke: 1pt aqua;
+}
+
+.service__wrapper .service__box{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*==================================================================CARD DESIGN===============================================================*/
+.service__wrapper .service__box .card{
+    display: flex;
+    flex-direction: column;
+    padding:10px 5px;
+    width: 280px;
+    height: max-content;
+    align-items: center;
+    background-color: #313743;
+    margin-right: 10px;
+    border-radius: 25px;
+    user-select: none;
+    position: relative;
+}
+.service__wrapper .service__box .card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.service__wrapper .service__box .card h3{
+    color: rgb(255, 255, 255);
+}
+.service__wrapper .service__box .card h5{
+    margin-top: 5px;
+    letter-spacing: 1pt;
+    color: aqua;
+}
+.service__wrapper .service__box .card div{
+    width: 100%;
+    text-align: center;
+    padding: 0 5px;
+    margin-top: 15px;
+    font-size: 10pt;
+    color: white;
+    line-height: 20px;
+}
+.service__wrapper .service__box .card  button{
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: aqua;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    transition: .5s all ease;
+}
+.service__wrapper .service__box .card  button:hover,
+.service__wrapper .service__box .card  button:focus{
+    transform: scale(.93);
+    box-shadow: 0 0 10px 1px aqua;
+}
+/*======================================================================END OF CARD DESIGN==================================================*/
+
+
+
+@media (max-width:805px){
+    .service__wrapper .service__box {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .service__wrapper .service__box .card{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:268px){
+    .service__wrapper .service__box .card h3{
+        font-size: 13pt;
+    }
+}

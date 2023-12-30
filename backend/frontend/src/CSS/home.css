@@ -1,0 +1,124 @@
+.home__wrapper{
+    width: 100%;
+    min-height: 100dvh;
+    height: max-content;
+    position: relative;
+    display: flex;
+    background-color: #1f232e;
+    box-shadow: 0 2px black;
+    margin-bottom: 1px;
+}
+.home__wrapper .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5% ;
+}
+.home__wrapper .right img{
+    width: 400px;
+    height: 400px;
+}
+.home__wrapper .left{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 29.2dvh 2% 29.2dvh 15%;
+    color: white;
+}
+.home__wrapper .left h1, h4{
+    margin-bottom: 2px;
+}
+.home__wrapper .left h4 span:not(.cursor){
+    color: aqua;
+    display:none;
+}
+.home__wrapper .left h4 span.cursor{
+    height: 5px;
+    border: 1.2px solid aqua;
+}
+.home__wrapper .left h4 span.blink{
+    animation: blink 1.5s steps(2) infinite;
+}
+@keyframes blink{
+    0%{opacity: 0;}
+}
+.home__wrapper .left p{
+    font-size: 10pt;
+    margin-top: 7px;
+}
+.home__wrapper .left div{
+    display: flex;
+    margin-top: 25px;
+}
+.home__wrapper .left div img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.home__wrapper .left button{
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: aqua;
+    -webkit-text-stroke: .6pt black;
+    letter-spacing: 1.2pt;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .4s all ease;
+}
+.home__wrapper .left button:hover,
+.home__wrapper .left button:focus{
+    transform: scale(.96);
+    box-shadow: 0 0 15px 5px aqua;
+}
+@media (max-width:1186px){
+    .home__wrapper .left{
+        padding: 29.2dvh 2% 29.2dvh 1%;
+    }
+}
+@media (max-width:793px){
+    .home__wrapper .left h1{
+        font-size: 15pt;
+    }
+    .home__wrapper .left h4{
+        font-size: 10pt;
+    }
+}
+@media (max-width:712px){
+    .home__wrapper{
+        flex-direction: column-reverse;
+    }
+    .home__wrapper .left{
+        padding: 10px;
+        width: 95%;
+    }
+    .home__wrapper .left h1{
+        font-size: 18pt;
+    }
+    .home__wrapper .left h4{
+        font-size: 13pt;
+    }
+    .home__wrapper .left .btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .home__wrapper .right{
+        width: 100%;
+        padding: 5% 0;
+    }
+}
+@media(max-width:430px){
+    .home__wrapper .right img{
+        width: 85%;
+        height: 85%;
+    }
+}
+@media (max-width:393px){
+    .home__wrapper .left{
+        width:90%;
+    }
+}

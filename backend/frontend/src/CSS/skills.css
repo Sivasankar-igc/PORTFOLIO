@@ -1,0 +1,205 @@
+.skills__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100dvh;
+    max-height: max-content;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1f232e;
+    box-shadow: 0 2px black;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.skills__wrapper header {
+    font-size: 20pt;
+    -webkit-text-stroke: 1pt white;
+    color: white;
+    margin: 45px 0;
+}
+
+.skills__wrapper header span {
+    letter-spacing: 1.2pt;
+}
+
+.skills__wrapper header span:nth-child(1) {
+    color: aqua;
+    margin-right: 10px;
+    -webkit-text-stroke: 1pt aqua;
+}
+
+.skills__wrapper .highlights {
+    padding: 10px;
+    display: flex;
+}
+
+/*=================================================================BOX DESIGN============================================================*/
+
+.skills__wrapper .highlights div.box {
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #313743;
+}
+
+.skills__wrapper .highlights div.box .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.skills__wrapper .highlights div.box p {
+    color: white;
+    margin-top: 15px;
+}
+
+.skills__wrapper .skill__box {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.skills__wrapper .highlights div.box .circle svg {
+    position: absolute;
+}
+
+.skills__wrapper .highlights div.box .circle:nth-child(1) svg circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+}
+
+.skills__wrapper .highlights div.box:nth-child(1) .circle svg circle.animate {
+    animation: anim1 1s linear forwards;
+}
+
+.skills__wrapper .highlights div.box:nth-child(2) .circle svg circle.animate {
+    animation: anim2 1s linear forwards;
+}
+
+.skills__wrapper .highlights div.box:nth-child(3) .circle svg circle.animate {
+    animation: anim3 1s linear forwards;
+}
+
+.skills__wrapper .highlights div.box:nth-child(4) .circle svg circle.animate {
+    animation: anim4 1s linear forwards;
+}
+
+@keyframes anim1 {
+    100% {
+        stroke-dashoffset: 230;
+    }
+}
+
+@keyframes anim2 {
+    100% {
+        stroke-dashoffset: 190;
+    }
+}
+
+@keyframes anim3 {
+    100% {
+        stroke-dashoffset: 175;
+    }
+}
+
+@keyframes anim4 {
+    100% {
+        stroke-dashoffset: 190;
+    }
+}
+
+/*==================================================================END OF BOX DESIGN=========================================================*/
+
+/*====================================================================SKILLS PROGRESS BAR================================================*/
+
+.skills__wrapper .skill__box .skill {
+    width: 400px;
+    margin: 5px;
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills__wrapper .skill__box .skill p {
+    font-size: 9pt;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.skills__wrapper .skill__box .skill span {
+    color: aqua;
+}
+
+.skills__wrapper .skill__box .skill .progress__bar {
+    width: 90%;
+    height: 10px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.353);
+}
+
+.skills__wrapper .skill__box .skill .progress__bar .progress {
+    background-color: aqua;
+    width: 75%;
+    height: 10px;
+    border-radius: 25px;
+}
+
+/*==========================================================END OF SKILL PROGRSS BAR=====================================================*/
+
+@media(max-width:940px) {
+    .skills__wrapper .highlights {
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .skills__wrapper .highlights div.box {
+        width: 280px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .skills__wrapper .highlights div.box p {
+        font-size: 10pt;
+    }
+}
+
+@media(max-width:385px) {
+    .skills__wrapper .highlights {
+        width: 90%;
+    }
+}
+@media (max-width:1290px){
+    .skills__wrapper .skill__box {
+        width: 100%;
+    }
+}
+@media (max-width:890px) {
+    .skills__wrapper .skill__box .skill {
+        width: 40%;
+    }
+}
+
+@media (max-width:640px) {
+    .skills__wrapper .skill__box .skill {
+        width: 80%;
+    }
+}
