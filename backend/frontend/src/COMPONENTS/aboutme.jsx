@@ -5,6 +5,7 @@ import mobile from "../ICONS/mobile.png";
 import nationality from "../ICONS/nationality.png";
 import dob from "../ICONS/dob.png";
 import img from "../ICONS/photo.png"
+import pdf from "../myResume.pdf";
 
 const AboutMe = () => {
     return (
@@ -28,7 +29,7 @@ const AboutMe = () => {
                         <div><span><img src={nationality}/></span><span>Indian</span></div>
                         <div><span><img src={dob} /></span>January 21, 2004</div>
                     </div>
-                    <div className="anchor"><a href="../myResume.pdf" download>Download CV</a></div>
+                    <div className="anchor"><a href={pdf} download>Download CV</a></div>
                 </div>
             </section>
         </>
