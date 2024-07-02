@@ -75,6 +75,7 @@
     width: 100%;
     height: 90%;
     border-radius: 15px;
+    cursor: pointer;
     transition: .4s all ease;
 }
 
